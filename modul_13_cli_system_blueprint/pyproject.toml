@@ -1,0 +1,14 @@
+[project]
+name = "modul-13-cli-system-blueprint"
+version = "1.0.0"
+description = "Modul 13: CLI System Blueprint - Full-Stack CLI System (kernel, session, storage, resilience)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,23 @@
+[project]
+name = "cli-project-defense-suite"
+version = "1.0.0"
+description = "Modul 15 - CLI Project Defense Blueprint: release packaging, docs, and demo automation"
+authors = [{ name = "Tim Pengembang Algoritma & Pemrograman 2" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+cli-defense = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["config", "src", "src.packager", "src.generator", "src.simulator", "src.ui"]
